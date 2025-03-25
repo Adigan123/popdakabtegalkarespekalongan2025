@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POPDA Kab.Tegal Eks Karesidenan Pekalongan 2025</title>
+    <link rel="icon" href="logo3.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div
+      class="container d-flex align-items-center justify-content-center vh-100"
+    >
+      <div class="cover-content">
+        <h3 class="display-4 fw-bold">
+          POPDA EKS KARESIDENAN PEKALONGAN TAHUN 2025 DI KAB TEGAL
+        </h3>
+        <img src="logo3.png" class="img-logo" /><br />
+        <a href="keabsahan.html" class="btn btn-lg btn-danger mb-2"
+          >KEABSAHAN</a
+        >
+        <a href="temu_teknik.html" class="btn btn-lg btn-success mb-2"
+          >TEMU TEKNIK</a
+        >
+        <a href="pelakssanaan.html" class="btn btn-lg btn-warning mb-2"
+          >PELAKSANAAN</a
+        >
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        user-select: none;
+      }
+      .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url("background.jpg") no-repeat center center/cover;
+        animation: slideBackground 10s infinite alternate ease-in-out;
+      }
+      @keyframes slideBackground {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+      .cover-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+        padding: 20% 10px;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      .img-logo {
+        height: 200%;
+      }
+
+      @media (max-width: 500px) {
+        .cover-content {
+          padding: 10% 10px;
+        }
+        .cover-content h1 {
+          font-size: 1.5rem;
+        }
+        .img-logo {
+          height: 80px;
+        }
+        .btn {
+          font-size: 1rem;
+          padding: 5px 10px;
+        }
+      }
+    </style>
+  </body>
+</html>
